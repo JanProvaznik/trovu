@@ -1,0 +1,33 @@
+{
+  "name": "@trovu/mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Trovu web shortcuts",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose",
+    "lint": "eslint src/"
+  },
+  "keywords": [
+    "trovu",
+    "mcp",
+    "model-context-protocol",
+    "shortcuts"
+  ],
+  "author": "Trovu",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.23.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.8.1",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
+    "typescript": "^5.6.3"
+  }
+}
