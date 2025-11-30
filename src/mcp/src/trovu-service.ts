@@ -412,6 +412,8 @@ export class TrovuService {
       if (encodingMatch) {
         const encoding = encodingMatch[1];
         if (encoding === "none") return arg;
+        // Using escape() to match original Trovu behavior for ISO-8859-1 encoding
+        // eslint-disable-next-line no-undef
         if (encoding === "iso-8859-1") return escape(arg);
       }
 
